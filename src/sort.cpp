@@ -1,6 +1,6 @@
-// Group 12 - sort() implementation
+// Group 12 - sortData() implementation
 
-void sort(int scores[], int n)
+void sortData(int scores[], int n)
 {
     for (int i = 0; i < n - 1; i++)
     {
