@@ -1,5 +1,5 @@
 //Group 12 - rank() implementation
-void rankData(const int scores[], int ranks[], int n)
+void rankData(const int scores[], double ranks[], int n)
 {
     for (int i = 0; i < n; i++)
     {
