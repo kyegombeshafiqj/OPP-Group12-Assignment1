@@ -1,18 +1,20 @@
-//Group 12 - rank() implementation
-void rankData(const int scores[], double ranks[], int n)
+#include "../include/ranking_sorting.h"
+
+void rankData(int scores[], double ranks[], int n)
 {
     for (int i = 0; i < n; i++)
     {
-        int r = 1;
+        int countLess = 0;
+        int countEqual = 0;
 
         for (int j = 0; j < n; j++)
         {
             if (scores[j] < scores[i])
-            {
-                r++;
-            }
+                countLess++;
+            else if (scores[j] == scores[i])
+                countEqual++;
         }
 
-        ranks[i] = r;
+        ranks[i] = countLess + (countEqual + 1) / 2.0;
     }
 }
