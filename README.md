@@ -1,4 +1,4 @@
-# OPP-Group12-Assignment1
+
 Algorithmic Ordering and Ranking 
  Introduction
 Data sequencing and comparative evaluation are central components of modern software systems, database engines, and data science workflows. The goal of this project by Group 12 was to implement, test, and analyze five fundamental operations responsible for ordering and evaluating elements within a dataset:
@@ -28,8 +28,7 @@ Explanation: Assigns ranks to elements, but ties receive the same rank without l
 Distinct Values Ranked: 55 (1), 60 (2), 65 (3), 70 (4), 75 (5), 78 (6), 85 (7), 92 (8).
 Output (mapped to original order): [6, 8, 3, 7, 8, 4, 1, 7, 2, 5]
 5. percentile_rank()
-Explanation: Calculates the relative rank of an item as a percentage between 0 and 1. The standard formula is (Rank-1)/(N-1) (using the lowest rank for ties, known as the "min" ranking method).
-Distinct Values Formula Bases: 55 (0/9), 60 (1/9), 65 (2/9), 70 (3/9), 75 (4/9), 78 (5/9), 85 (6/9), 92 (8/9).
-Output (mapped to original order, rounded): [0.56, 0.89, 0.22, 0.67, 0.89, 0.33, 0.00, 0.67, 0.11, 0.44]
+Explanation: Calculates the relative rank of an item as a percentage between 0 and 1 using average ranks for tied values.The  formula used  is (Rank-1)/(N-1).
+Output (mapped to original order, rounded): [0.56, 0.94, 0.22, 0.72, 0.94, 0.33, 0.00, 0.72, 0.11, 0.44]
 
 All the functions are verified and tested using the main.cpp file.
